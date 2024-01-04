@@ -1,2 +1,2 @@
 # Useful-Code
-A few code pieces I'm always using in my daily
+A few pieces I'm always using in my daily
