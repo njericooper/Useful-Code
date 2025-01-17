@@ -1,9 +1,11 @@
 # Create calculate_insurance_cost() function below: 
-def calculate_insurance_cost():
-  estimated_cost = 1000
+def calculate_insurance_cost(age, sex, bmi, num_of_children, smoker):
+
+  estimated_cost = 250*age - 128*sex + 370*bmi + 425*num_of_children + 24000*smoker - 12500
+
   return estimated_cost
   print(estimated_cost)
-print("The estimated insurance cost for this person is", calculate_insurance_cost(), " dollars.")
+print("The estimated insurance cost for this person is", calculate_insurance_cost(35, 1, 22.2, 0, 1), " dollars.")
 
 # Initial variables for Maria 
 age = 28
@@ -13,9 +15,8 @@ num_of_children = 3
 smoker = 0  
 
 # Estimate Maria's insurance cost
-insurance_cost = 250*age - 128*sex + 370*bmi + 425*num_of_children + 24000*smoker - 12500
+maria_insurance_cost = calculate_insurance_cost(age, sex, bmi, num_of_children, smoker)
 
-print("The estimated insurance cost for Maria is " + str(insurance_cost) + " dollars.")
 
 # Initial variables for Omar
 age = 35
