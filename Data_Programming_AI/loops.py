@@ -93,3 +93,37 @@ dog_breed_I_want = "dalmatian"
 
 for dog_breed in dog_breeds_available_for_adoption:
   print(dog_breed)
+
+for dog_breed in dog_breeds_available_for_adoption:
+  print(dog_breed)
+  if dog_breed == dog_breed_I_want:
+    print("They have the dog I want!")
+    break
+
+  ''''Loop Control: Continue'''
+
+  ages = [12, 38, 34, 26, 21, 19, 67, 41, 17]
+
+for age in ages:
+  if age < 21:
+    continue 
+  print(age)
+
+  ''''Nested Loops'''
+sales_data = [[12, 17, 22], [2, 10, 3], [5, 12, 13]]
+
+scoops_sold = 0
+
+for location in sales_data:
+  for scoops in location:
+    scoops_sold+= scoops
+print(scoops_sold)
+
+'''List Comprehensions: Introduction'''
+
+grades = [90, 88, 62, 76, 74, 89, 48, 57]
+scaled_grades =[ grade + 10 for grade in grades]
+print(scaled_grades)
+
+
+''''List Comprehensions: Conditionals'''
