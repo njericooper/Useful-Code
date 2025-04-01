@@ -127,3 +127,43 @@ print(scaled_grades)
 
 
 ''''List Comprehensions: Conditionals'''
+heights = [161, 164, 156, 144, 158, 170, 163, 163, 157]
+
+can_ride_coaster = [height for height in heights if height > 161]
+
+print(can_ride_coaster)
+
+'''''Review'''
+
+"""""Create a list called single_digits that consists of the numbers 0-9 (inclusive)."""
+
+# Your code below:
+
+single_digits = range(10)
+#Print each digit
+for digit in single_digits:
+  print(digit)
+
+  # Your code below:
+
+single_digits = range(10)
+#Create a list cale squares
+
+squares=[]
+for digit in single_digits:
+  print(digit)
+#cubes
+# Your code below:
+
+single_digits = range(10)
+#Create a list cale squares
+
+squares=[]
+cubes = []
+for digit in single_digits:
+  squares.append(digit**2)
+  print(digit, squares)
+
+for digit in single_digits:
+    cubes.append(digit**3)
+    print(cubes)
